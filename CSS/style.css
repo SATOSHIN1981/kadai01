@@ -1,0 +1,292 @@
+/* bodyへの設定 */
+body {
+ background: white;
+ width: 100vw;
+}
+
+/* 未着手ヘッダー */
+.header{
+   display: flex;
+   align-items: center; 
+}
+
+.menu-flex{
+    display: flex;
+    justify-content: flex-end;
+margin: 0 0 0 auto;
+}
+
+.menu1{
+    margin: 50px;
+}
+
+/* 共通　なんか、これがちゃんと適用されている気がしない。 */
+
+h1 {
+    margin-top: 60px;
+    margin-bottom: 30px;
+    font-size: 24px; 
+    color: #ffd61a; 
+}
+h2 {
+    font-size: 18px;
+    font-weight: bold;
+}
+p {
+    font-size: 16px;
+}
+
+/* メインビジュアル  
+　・Paddingで上下をいったん120pxで置いてる
+　・画像を入れているけれど、繰り返しになってしまう。
+　・間を30pxにする方法がわからない。
+　・フォントサイズを微調整しなければ。
+ */
+.main {
+    background-image: url(/img/mainbg.png
+    );
+    text-align: center;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    color: #fafafa;
+}
+
+.main-text{
+    color: #fafafa;
+    font-size: 40px;
+}
+
+/* aboutのところ
+　　・間の調整の方法がまだわからない。
+　　・フォントサイズを微調整しなければ。
+*/
+.about1 {
+    text-align: center;
+}
+
+.about-subtitle{
+    margin-bottom: 60px;
+}
+
+.about-text{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.about-img{
+    display: flex;
+    margin: 0 0 0 auto;
+    margin-top: 80px;
+    margin-bottom: 60px;
+}
+
+/* courseのところ 
+*/
+.course-title {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+#course{
+    margin-bottom: 30px;
+}
+
+.course-body {
+    background-color:#fafafa;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+.course-img{
+width: 50vw;
+}
+.course-img img{
+    object-fit: contain;
+    width: 100%;
+    }
+
+/* 一旦仮で上下120で置く */
+.coursetext{
+    padding-top: 120px;
+    padding-bottom: 120px;
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 50vw;
+}
+
+.coursetext p{
+    width: 430px;
+}
+
+/* Newsのところ
+ */
+.news-body{
+    text-align: center;
+
+}
+
+.news-flex{
+    display: flex;
+    margin: 0 0 0 auto;
+}
+
+.news-img:hover{
+    opacity: 0.5;
+}
+
+.news-day-title{
+    margin-top: 30px;
+    margin-bottom: 24px;
+}
+
+.news-day{
+width: 300;
+margin: 30px;
+}
+
+
+.More{
+    width: 300px;
+    height: 60px;
+    margin: 60px;
+    font-size: 18px;
+    background-color: #ffd61a; 
+    color: #fafafa;
+    border: 0px;
+}
+.More:hover{
+    background-color: #707070;
+    color: #bfbfbf;
+}
+
+/* Accessんところ */
+.access-body{
+    background-color: #fafafa;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+#access{
+    color: #222222;
+    font-weight: bold;
+}
+
+.access-table{
+    text-align: left;
+    line-height: 30px;
+    margin: 0 auto;
+}
+
+iframe{
+margin-top: 60px;
+margin-bottom: 60px;
+}
+
+.table-left{
+    width: 200px;
+}
+
+/* Contactんところ */
+.contact-body {
+    text-align: center;
+ 
+}
+
+.contact-form{
+margin-top: 70px;
+margin-bottom: 140px;
+}
+
+.contact-table{
+margin-bottom: 30px;
+margin: 0 auto;
+border-top: 1px #bfbfbf solid; 
+border-bottom: 1px #bfbfbf solid;
+ 
+}
+
+#contact{
+    color: #222222;
+    font-weight: bold;   
+}
+
+.contact-h3 {
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+.contact-tr{
+    border-bottom: 1px #bfbfbf solid;
+}
+
+th{
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.table-a{
+    width: 160px;
+    padding-left: 16px;
+    padding-right: 64px;
+    vertical-align: text-top;
+    text-align: left;
+}
+
+.table-b{
+    width: 400;
+    border-left: 1px #bfbfbf solid;
+    text-align: left;
+    padding-left: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+#checkbox {
+    margin-bottom: 24px;
+}
+
+#username{
+    width: 300px;
+}
+
+#username-kana{
+    width: 300px;
+}
+
+#email{
+    width: 300px;
+}
+
+select{
+    width: 300px;
+}
+
+textarea{
+    width: 300px;
+}
+
+.send{
+    width: 300px;
+    height: 60px;
+    margin: 30px;
+    font-size: 18px;
+    background-color: #ffd61a; 
+    color: #fafafa;
+    border: 0px;
+}
+.send:hover{
+    background-color: #707070;
+    color: #bfbfbf;
+}
+
+/* フッター部 */
+.footer{
+    background-color: #707070;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    color: #fafafa
+}
